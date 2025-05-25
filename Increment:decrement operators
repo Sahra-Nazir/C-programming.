@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a = 5, b;
+
+    printf("Initial value of a: %d\n", a);
+
+    // Post-increment
+    b = a++;
+    printf("After b = a++, b: %d, a: %d\n", b, a);
+
+    // Pre-increment
+    b = ++a;
+    printf("After b = ++a, b: %d, a: %d\n", b, a);
+
+    // Post-decrement
+    b = a--;
+    printf("After b = a--, b: %d, a: %d\n", b, a);
+
+    // Pre-decrement
+    b = --a;
+    printf("After b = --a, b: %d, a: %d\n", b, a);
+
+    return 0;
+}
