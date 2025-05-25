@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b;
+
+    printf("Initial value of a: %d\n", a);
+
+    // Simple assignment
+    b = a;
+    printf("After b = a, b: %d\n", b);
+
+    // Add and assign
+    b += 5;  // b = b + 5
+    printf("After b += 5, b: %d\n", b);
+
+    // Subtract and assign
+    b -= 3;  // b = b - 3
+    printf("After b -= 3, b: %d\n", b);
+
+    // Multiply and assign
+    b *= 2;  // b = b * 2
+    printf("After b *= 2, b: %d\n", b);
+
+    // Divide and assign
+    b /= 4;  // b = b / 4
+    printf("After b /= 4, b: %d\n", b);
+
+    // Modulus and assign
+    b %= 3;  // b = b % 3
+    printf("After b %%= 3, b: %d\n", b);
+
+    // Bitwise AND and assign
+    b &= 1;
+    printf("After b &= 1, b: %d\n", b);
+
+    // Bitwise OR and assign
+    b |= 2;
+    printf("After b |= 2, b: %d\n", b);
+
+    // Bitwise XOR and assign
+    b ^= 3;
+    printf("After b ^= 3, b: %d\n", b);
+
+    // Left shift and assign
+    b <<= 1;
+    printf("After b <<= 1, b: %d\n", b);
+
+    // Right shift and assign
+    b >>= 2;
+    printf("After b >>= 2, b: %d\n", b);
+
+    return 0;
+}
