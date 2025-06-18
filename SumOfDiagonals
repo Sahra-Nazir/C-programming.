@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter size of square matrix: ");
+    scanf("%d", &n);
+
+    int mat[n][n];
+    printf("Enter matrix elements:\n");
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            scanf("%d", &mat[i][j]);
+
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += mat[i][i]; // Primary
+        if (i != n - 1 - i)
+            sum += mat[i][n - 1 - i]; // Secondary (avoid double-count)
+    }
+
+    printf("Sum of diagonal elements: %d\n", sum);
+    return 0;
+}
